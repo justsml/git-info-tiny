@@ -7,16 +7,16 @@ var assert = require('better-assert'),
 describe('git-info-tiny', function() {
 	it('fails gracefully', function(done) {
 		gitInfo({path: '/'}, function(err, summary) {
-			console.log(err, summary)
+			// console.log(err, summary)
 			assert(err)
 			assert(err.message.indexOf('Path') > -1)
 			assert(!summary || !summary.SHA)
 			done()
 		});
 	})
-	it('has all data', function(done) {
+	it('has valid data', function(done) {
 		gitInfo({path: path.resolve(__dirname, '..')}, function(err, summary) {
-			console.log(arguments)
+			// console.log(arguments)
 			assert(summary.smallSHA.length >= 16)
 			assert(summary.tinySHA.length >= 5)
 			assert(summary.currentBranch.length > 1)
