@@ -16,7 +16,7 @@ describe('git-info-tiny', function() {
 	})
 	it('has valid data', function(done) {
 		gitInfo({path: path.resolve(__dirname, '..')}, function(err, summary) {
-			// console.log(arguments)
+			console.log(arguments)
 			assert(summary.smallSHA.length >= 16)
 			assert(summary.tinySHA.length >= 5)
 			assert(summary.currentBranch.length > 1)
