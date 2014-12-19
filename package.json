@@ -1,0 +1,33 @@
+{
+  "name": "git-info-tiny",
+  "version": "0.2.0",
+  "description": "NodeJS module which returns assorted project details using git",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/justsml/git-info-tiny.git"
+  },
+  "keywords": [
+    "nodejs",
+    "git",
+    "git-info",
+    "git",
+    "summary"
+  ],
+  "author": "Dan Levy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/justsml/git-info-tiny/issues"
+  },
+  "homepage": "https://github.com/justsml/git-info-tiny",
+  "dependencies": {
+    "async": "^0.9"
+  },
+  "devDependencies": {
+    "better-assert": "^1.0",
+    "mocha": "^2.0"
+  }
+}
